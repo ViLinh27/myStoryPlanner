@@ -1,0 +1,167 @@
+/*--color pallette--*/
+/* main background color: #25a283*/
+/* secondary background-color: #82e1c9*/
+/*app bar/header/buttons/timeline borders:
+  #0C6D55*/
+/*dark green back hover color: 9fd7d8*/
+/*dark green back active: 63B8B9*/
+/*--end of color pallette--*/
+
+/*--global--*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #25a283;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+/* .row {
+  display: flex;
+} */
+
+/* Left column (menu) */
+.left {
+  /* flex: 35%; */
+  /* padding: 15px 0; */
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/*What I want parallaxed:*/
+.text-wrap1 {
+  transition: transform 0.7s cubic-bezier(0.16, 0.2, 0.38, 0.98);
+}
+.text-wrap2 {
+  transition: transform 0.7s cubic-bezier(0.16, 0.2, 0.38, 0.98);
+}
+
+/* Right column (page content) */
+.right {
+  /* flex: 80%; */
+  /* padding: 15px; */
+  background-color: #82e1c9;
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #cef5eb;
+  border-radius: 6px;
+  background-color: #cef5eb;
+  margin: 0;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #a0d3c6;
+  border-radius: 6px;
+}
+/*--end of global--*/
+
+/*-- homepage preview links--*/
+.previewlinks {
+  background-color: #cef5eb;
+  padding: 20px;
+  margin: 50px 0;
+}
+/*-- end of homepage preview links--*/
+
+/*-- header--*/
+.header {
+  width: 100%; /* Full-width */
+  background-color: #0c6d55;
+  overflow: auto; /* Overflow due to float */
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header a {
+  float: left; /*float links side by side*/
+  text-align: center; /*center align text*/
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+}
+
+.header a:hover {
+  background-color: #9fd7d8; /* Add a hover color */
+  /*#ffffff*/
+}
+
+.active {
+  background-color: #63b8b9; /* Add an active/current color */
+  /**/
+}
+/*-- end of header--*/
+
+/*media screens*/
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .left {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .left h2 {
+    font-size: medium;
+  }
+  #myMenu li a {
+    float: left;
+    font-size: small;
+  }
+  .right {
+    margin-left: 0;
+  }
+  #mySearch {
+    float: right;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .left h2 {
+    text-align: center;
+  }
+  #myMenu li a {
+    text-align: center;
+    float: none;
+  }
+  #mySearch {
+    text-align: center;
+    float: center;
+  }
+}
+
+/*end of media screens*/

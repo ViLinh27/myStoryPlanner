@@ -1,0 +1,28 @@
+/*flex box*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-child {
+  flex: 1;
+  /*border: 2px solid yellow;*/
+  flex-direction: row;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+/*end of flex-box*/
+
+/*media queries*/
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-child {
+    flex-direction: column;
+  }
+}
+
+/*end of media queries*/

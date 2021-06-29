@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../styling/styles.css">
+        <link rel="stylesheet" href="../../styling/flexbox.css">
+        <link rel="stylesheet" href="../../styling/appBar.css">
+        <link rel="stylesheet" href="../../styling/characters.css">
+        <link rel="stylesheet" href="../../styling/conflicts.css">
+        <link rel="stylesheet" href="../../styling/relationships.css">
+        <link rel="stylesheet" href="../../styling/timeline.css">
+    </head>
+    <body>
+        <!--header-->
+        <header class="header">
+            <div class="flex-container">
+                <div class="flex-child home">
+                    <a href="../homepage/homepage.html">Home</a>
+                </div>
+                <div class="flex-child invitation">
+                    <a href="../fatherSinclair/fatherSinclair.html">Father Sinclair</a>
+                </div>
+                <div class="flex-child opia">
+                    <a href="../opia/opia.html">Opia</a>
+                </div>
+                <div class="flex-child puppet">
+                    <a href="../puppetMaster/puppetmaster.html">The Puppetmaster</a>
+                </div>
+                <div class="flex-child fortuneteller">
+                    <a href="../fortuneteller/fortuneteller.html">Fortuneteller</a>
+                </div>
+            </div>
+        </header>
+        <!--end of header-->
+
+        <!-- Invitation-->
+        <div id="tabcontent2" class="invitation">
+            <h2>Invitation for a Drink</h2>
+            <h3>Synopsis</h3>
+            <p>Dr Hisaye Ito meets a beautiful businesswoman at a party that will help her reveal secrets her mother has
+                kept about the identity of her father.</p>
+        </div>
+        <!-- end of Invitation-->
+
+        <!--app bar-->
+        <div class="app-bar">
+            <div class="flex-container">
+                <div class="flex-child char">
+                    <a href="#characters">Characters</a>
+                </div>
+                <div class="flex-child conf">
+                    <a href="#conflicts">Conflicts</a>
+                </div>
+                <div class="flex-child rel">
+                    <a href="#relationships">Relationships</a>
+                </div>
+                <div class="flex-child outl">
+                    <a href="#timeline">Outline</a>
+                </div>
+            </div><!-- end of flex-container-->
+        </div>
+        <!--end of app bar-->
+
+        <!--characters-->
+        <div class="characters" id="characters">
+            <h3>Characters</h3>
+
+            <div class="dropdown">
+                <h4 class="dropbtn">Ito family</h4>
+                <div class="dropdown-content">
+                    <a href="#">Hisaye Ito</a>
+                    <a href="#">Takeko Ito</a>
+                </div>
+            </div>
+            <!--end of dropdown -->
+
+            <div class="dropdown">
+                <h4 class="dropbtn">Cavan family</h4>
+                <div class="dropdown-content">
+                    <a href="#">Finnley Cavan</a>
+                    <a href="#">Isabel Ito-Cavan</a>
+                    <a href="#">Dermott Cavan</a>
+                </div>
+            </div>
+            <!--end of dropdown -->
+        
+
+        <div class="dropdown">
+            <h4 class="dropbtn">Others</h4>
+            <div class="dropdown-content">
+                <a href="#">Michael Powell</a>
+                <a href="#">Dr. Bazolli</a>
+            </div>
+        </div>
+        <!--end of dropdown -->
+        </div>
+        <!--end of characters-->
+
+        <!--conflicts-->
+        <div class="conflicts" id="conflicts">
+            <h3>Conflicts</h3>
+
+            <!--trigger modal-->
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <button id="myBtn">
+                            Why has Hisaye avoided getting into relationships for a long time?
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="myBtn2">
+                            Why did Takeko hide Hisaye's sprite heritage from her?
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <!--end of trigger modal-->
+
+            <!--modal-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>modal 1</p>
+                </div>
+            </div>
+            <!-- end of modal content-->
+            
+            <!--modal 2-->
+            <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                    <span class="close2">&times;</span>
+                    <p>modal 2</p>
+                </div>
+            </div>
+            <!--end of modal 2-->
+        </div>
+        <!--end of conflicts-->
+
+        <!--relationships-->
+        <div class="relationships" id="relationships">
+            <h3>Relationships</h3>
+
+            <!-- The Ito family-->
+            <div class="Ito">
+                <button type="button" class="collapsible">
+                    The Ito family
+                </button>
+                <div class="collapse_content">
+                    <ul>
+                        <li>
+                            test 1
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of Ito family-->
+
+            <!-- The Merlo family-->
+            <div class="Merlo">
+                <button type="button" class="collapsible">
+                    Hisaye and Saint Agatha hospital
+                </button>
+                <div class="collapse_content">
+                    <ul>
+                        <li>
+                            test 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of Merlo family -->
+        </div>
+        <!--end of relationships-->
+
+        <!--outline-->
+        <div class="timeline" id="timeline">
+            <h3>Outline</h3>
+
+            <!-- event-->
+            <div class="container fromleft">
+                <div class="timeline-content">
+                    <p>Hisaye gets her dress from her mother for the hospital director's engagement party</p>
+                </div>
+            </div>
+            <!-- end of event-->
+
+            <!-- event-->
+            <div class="container fromright">
+                <div class="timeline-content">
+                    <p>Hisaye sees Erdutza Merlo lounging on a couch.</p>
+                </div>
+            </div>
+            <!-- end of event-->
+        </div>
+        <!--end of outline-->
+
+        <script src="../../styling/js-effects/base_effects.js"></script>
+        <script src="../../styling/js-effects/modal.js"></script>
+        <script src="../../styling/js-effects/collapse_content.js"></script>
+    </body>
+</html>

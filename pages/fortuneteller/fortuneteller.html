@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../styling/styles.css">
+        <link rel="stylesheet" href="../../styling/flexbox.css">
+        <link rel="stylesheet" href="../../styling/appBar.css">
+        <link rel="stylesheet" href="../../styling/characters.css">
+        <link rel="stylesheet" href="../../styling/conflicts.css">
+        <link rel="stylesheet" href="../../styling/relationships.css">
+        <link rel="stylesheet" href="../../styling/timeline.css">
+    </head>
+    <body>
+        <!--header-->
+        <header class="header">
+            <div class="flex-container">
+                <div class="flex-child home">
+                    <a href="../homepage/homepage.html">Home</a>
+                </div>
+                <div class="flex-child fathersinclair">
+                    <a href="../fatherSinclair/fatherSinclair.html">Father Sinclair</a>
+                </div>
+                <div class="flex-child invitation">
+                    <a href="../invitation/invitation.html">Invitation for a Drink</a>
+                </div>
+                <div class="flex-child opia">
+                    <a href="../opia/opia.html">Opia</a>
+                </div>
+                <div class="flex-child puppet">
+                    <a href="../puppetMaster/puppetmaster.html">The Puppetmaster</a>
+                </div>
+            </div>
+        </header>
+        <!--end of header-->
+
+        <!-- Fortuneteller-->
+        <div id="tabcontent">
+            <h2>Fortuneteller</h2>
+            <h3>Synopsis</h3>
+            <p>Beatriz Merlo wants to convince Dante Moon to start looking for his parents, who had left him to his sister's care when
+            he was four. Through this tumultous freidnship, Beatriz dives deaper into the world of sprites and inhumans her mother
+            has tried to keep from her and her siblings.</p>
+        </div>
+        <!-- end of Fortuneteller-->
+
+        <!--app bar-->
+        <div class="app-bar">
+            <div class="flex-container">
+                <div class="flex-child char">
+                    <a href="#characters">Characters</a>
+                </div>
+                <div class="flex-child conf">
+                    <a href="#conflicts">Conflicts</a>
+                </div>
+                <div class="flex-child rel">
+                    <a href="#relationships">Relationships</a>
+                </div>
+                <div class="flex-child outl">
+                    <a href="#timeline">Outline</a>
+                </div>
+            </div>
+            <!-- end of flex-container-->
+        </div>
+        <!--end of app bar-->
+
+        <!--characters-->
+        <div class="characters" id="characters">
+            <h3>Characters</h3>
+
+            <div class="dropdown">
+                <h4 class="dropbtn">Merlo family</h4>
+                <div class="dropdown-content">
+                    <a href="#">Beatriz Merlo</a>
+                    <a href="#">Corbin Merlo</a>
+                    <a href="#">Everett Merlo</a>
+                    <a href="#">Erdutza Merlo</a>
+                    <a href="#">Carlos Merlo</a>
+                </div>
+            </div><!--end of dropdown-->
+
+            <div class="dropdown">
+                <h4 class="dropbtn">Moon family</h4>
+                <div class="dropdown-content">
+                    <a href="#">Dante Moon</a>
+                    <a href="#">Ji Yu Moon</a>
+                </div>
+            </div><!--end of dropdown-->
+
+            <div class="dropdown">
+                <h4 class="dropbtn">Kraus family</h4>
+                <div class="dropdown-content">
+                    <a href="#">Isaac Kraus</a>
+                    <a href="#">Edith Kraus</a>
+                    <a href="#">Simon Kraus</a>
+                </div>
+            </div>
+            <!--end of dropdown-->
+
+        </div>
+        <!--end of characters-->
+
+        <!--conflicts-->
+        <div class="conflicts" id="conflicts">
+            <h3>Conflicts</h3>
+            <!--trigger modal-->
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <button id="myBtn">
+                            Why does Dante not want to find his parents?
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="myBtn2">
+                            Why do the Moons have to stay with the Merlos at first?
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <!--end of trigger modal-->
+
+            <!--modal-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>modal1</p>
+                </div>
+            </div>
+            <!-- end of modal content-->
+
+            <!--modal 2-->
+            <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                    <span class="close2">&times;</span>
+                    <p>modal 2</p>
+                </div>
+            </div>
+            <!--end of modal 2-->
+        </div>
+        <!--end of conflicts-->
+
+        <!--Relationships-->
+        <div class="relationships" id="relationships">
+            <h3>Relationships</h3>
+                
+            <div class="Merlo">
+                <button type="button" class="collapsible">
+                The Merlo family
+                </button>
+                <div class="collapse_content">
+                    <ul>
+                        <li>
+                            ...test text
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class ="Moon">
+                <button type="button" class="collapsible">
+                    The Moon family
+                </button>
+                <div class="collapse_content">
+                    <ul>
+                        <li>
+                            ...test text
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end of Relationships-->
+
+        <!--outline-->
+        <div class="timeline" id="timeline">
+            <h3>Outline</h3>
+            <!-- event-->
+            <div class="container fromleft">
+                <div class="timeline-content">
+                    <p>The Moons arrive to the Merlo home</p>
+                </div>
+            </div>
+            <!-- end of event-->
+
+            <!-- event-->
+            <div class="container fromright">
+                <div class="timeline-content">
+                    <p>Beatriz finds out about the arson that happened at the new Moon home.</p>
+                </div>
+            </div>
+            <!-- end of event-->
+        </div>
+        <!--end of outline-->
+
+        <script src="../../styling/js-effects/base_effects.js"></script>
+        <script src="../../styling/js-effects/modal.js"></script>
+        <script src="../../styling/js-effects/collapse_content.js"></script>
+    </body>
+</html>

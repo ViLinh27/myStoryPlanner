@@ -1,0 +1,104 @@
+/*Conflicts*/
+.conflicts {
+  margin: 50px auto;
+}
+/* modal button*/
+#myBtn,
+#myBtn2,
+#myBtn3,
+#myBtn4 {
+  background-color: #0c6d55;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+#myBtn:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover {
+  background-color: #9fd7d8;
+}
+/* The Modal (background) */
+.modal,
+.modal2,
+.modal3,
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content,
+.modal-content2,
+.modal-content3,
+.modal-content4 {
+  background-color: #a7e0ff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3,
+.close4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus,
+.close4:hover,
+.close4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*end of modal*/
+
+/* animation stuff*/
+.modal-content,
+.modal-content2,
+.modal-content3,
+.modal-content4 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content,
+  .modal-content2,
+  .modal-content3,
+  .modal-content4 {
+    width: 100%;
+  }
+}
