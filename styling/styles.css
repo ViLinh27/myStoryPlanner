@@ -128,7 +128,7 @@ body {
 
 /*media screens*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .left {
     width: 100%;
     height: auto;
@@ -150,7 +150,7 @@ body {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   .left h2 {
     text-align: center;
   }
