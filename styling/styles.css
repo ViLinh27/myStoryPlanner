@@ -126,12 +126,43 @@ body {
 }
 /*-- end of header--*/
 
-/*-- --*/
+/*-- char page stuff--*/
+.info-preview {
+  grid-area: info;
+}
+.stats {
+  grid-area: stats;
+}
+.details {
+  grid-area: details;
+}
 .char-grid {
   display: inline-grid;
-  background-color: yellow;
+  grid-template-areas:
+    "info info info info info stats"
+    "details details details details details details";
+  grid-gap: 10px;
 }
-/*-- --*/
+.char-image {
+  width: 268px;
+  height: 450px;
+}
+.stats-table,
+.wiki-content {
+  background-color: #63b8b9;
+  width: 300px;
+}
+.table-header {
+  background-color: #a0d3c6;
+}
+.stats-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.stats-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/*-- end of char page stuff--*/
 
 /*media screens*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
