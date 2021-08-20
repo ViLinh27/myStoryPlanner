@@ -131,6 +131,9 @@ a {
 /*-- end of header--*/
 
 /*-- char page stuff--*/
+.main-char-content {
+  margin: 30px 60px;
+}
 .info-preview {
   grid-area: info;
 }
@@ -166,6 +169,11 @@ a {
 .stats-table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.backbutton {
+  width: 40px;
+  height: 40px;
+  background-color: #63b8b9;
+}
 /*-- end of char page stuff--*/
 
 /*media screens*/
@@ -188,6 +196,11 @@ a {
   }
   #mySearch {
     float: right;
+  }
+  /*character*/
+  .char-image {
+    width: 218px;
+    height: 400px;
   }
 }
 
