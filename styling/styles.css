@@ -153,6 +153,7 @@ a {
 .char-image {
   width: 268px;
   height: 450px;
+  float: center;
 }
 .stats-table,
 .wiki-content {
@@ -198,9 +199,19 @@ a {
     float: right;
   }
   /*character*/
+  .main-char-content {
+    margin: 15px 30px;
+  }
+  .stats-table {
+    width: 233px;
+  }
+  .stats-table td {
+    padding: 4px 0;
+    width: min-content;
+  }
   .char-image {
-    width: 218px;
-    height: 400px;
+    width: 233px;
+    height: 415px;
   }
 }
 
