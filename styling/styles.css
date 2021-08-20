@@ -126,6 +126,13 @@ body {
 }
 /*-- end of header--*/
 
+/*-- --*/
+.char-grid {
+  display: inline-grid;
+  background-color: yellow;
+}
+/*-- --*/
+
 /*media screens*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 768px) {
