@@ -139,6 +139,9 @@ img {
   grid-area: header;
   margin-top: 30px;
 }
+#all-locations:hover {
+  background-color: #82e1c9;
+}
 .residentials {
   grid-area: place1;
 }
@@ -182,18 +185,21 @@ img {
   float: center;
 }
 .stats-table,
-.wiki-content {
+.wiki-content,
+.story-locations-table {
   background-color: #63b8b9;
   width: 300px;
 }
 .table-header {
   background-color: #a0d3c6;
 }
-.stats-table td {
+.stats-table td,
+.story-locations-table td {
   border: 1px solid #ddd;
   padding: 8px;
 }
-.stats-table tr:nth-child(even) {
+.stats-table tr:nth-child(even),
+.story-locations-table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 .backbutton {
