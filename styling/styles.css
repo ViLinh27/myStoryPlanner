@@ -132,6 +132,26 @@ a:visited {
   /**/
 }
 /*-- end of header--*/
+.locationheader {
+  grid-area: header;
+  margin-top: 30px;
+}
+.residentials {
+  grid-area: place1;
+}
+.human-world-places {
+  grid-area: place2;
+}
+.alfheim-world-places {
+  grid-area: place3;
+}
+.locations {
+  display: inline-grid;
+  grid-template-areas:
+    "header header header"
+    "place1 place2 place3";
+  grid-gap: 10px;
+}
 
 /*-- char page stuff--*/
 .main-char-content {
