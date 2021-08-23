@@ -144,16 +144,20 @@ img {
 #all-locations:hover {
   background-color: #82e1c9;
 }
-.residentials {
+.residentials,
+.normal-humans {
   grid-area: place1;
 }
-.human-world-places {
+.human-world-places,
+.mostly-human {
   grid-area: place2;
 }
-.alfheim-world-places {
+.alfheim-world-places,
+.non-humans {
   grid-area: place3;
 }
-.locations {
+.locations,
+.character-list {
   display: inline-grid;
   grid-template-areas:
     "header header header"
