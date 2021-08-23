@@ -90,7 +90,9 @@ a:visited {
   display: block;
 }
 
-#myMenu li a:hover {
+#myMenu li a:hover,
+.active,
+.gen-collapsible:hover {
   background-color: #a0d3c6;
   border-radius: 6px;
 }
@@ -207,7 +209,30 @@ img {
   height: 40px;
   background-color: #63b8b9;
 }
+.backbutton:hover {
+  background-color: #82e1c9;
+}
 /*-- end of char page stuff--*/
+/*--gen-collapsible--*/
+.gen-collapsible {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.gen-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/*--end of gen collapsible--*/
 
 /*media screens*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

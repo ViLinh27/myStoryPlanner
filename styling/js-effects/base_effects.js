@@ -18,3 +18,8 @@ function myFunction() {
   }
 }
 //--end of search bar
+
+//back button//
+function goBack() {
+  window.history.back();
+}

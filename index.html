@@ -20,11 +20,22 @@
         
                 <!-- tab menu-->
                 <ul id="myMenu">
-                    <li ><a href="./pages/fatherSinclair/fatherSinclair.html">Father Sinclair</a></li>
-                    <li ><a href="./pages/invitation/invitation.html">Invitation for a Drink</a></li>
-                    <li ><a href="./pages/opia/opia.html">Opia</a></li>
-                    <li><a href="./pages/puppetMaster/puppetmaster.html">The Puppetmaster</a></li>
-                    <li><a href="./pages/fortuneteller/fortuneteller.html">Fortuneteller</a></li>
+                    <li>
+                        <button type="button" class="gen-collapsible">Stories</button>
+                        <div class="gen-content">
+                            <ul>
+                                <li><a href="./pages/fatherSinclair/fatherSinclair.html">Father Sinclair</a></li>
+                                <li><a href="./pages/invitation/invitation.html">Invitation for a Drink</a></li>
+                                <li><a href="./pages/opia/opia.html">Opia</a></li>
+                                <li><a href="./pages/puppetMaster/puppetmaster.html">The Puppetmaster</a></li>
+                                <li><a href="./pages/fortuneteller/fortuneteller.html">Fortuneteller</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="./pages/otherpages/locations.html">Locations</a>
+                    </li>
                 </ul>
                 <!-- end of tabs-->
             </div>
@@ -95,6 +106,14 @@
                     <a href="./pages/fortuneteller/fortuneteller.html">Learn more</a>
                 </div>
                 <!--end of fortuneteller-->
+                
+                <div class="text-wrap2">
+                    <div class="smolbackground"></div>
+                    <h2>Locations.</h2>
+                    <p>Some of these locations may appear in multiple stories while others appear
+                        only in one. Click <a href="./pages/otherpages/locations.html">here</a> to see more.
+                    </p>
+                </div>
             </div>
             <!--end of right-->
         
@@ -102,5 +121,6 @@
         <!--end of row (container)-->
 
         <script src="./styling/js-effects/base_effects.js"></script>
+        <script src="./styling/js-effects/gen-collapsible.js"></script>
     </body>
 </html>
