@@ -228,6 +228,7 @@ img {
   text-align: left;
   outline: none;
   font-size: 18px;
+  list-style-type: none;
 }
 
 .gen-content {
@@ -235,6 +236,7 @@ img {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  list-style-type: none;
 }
 /*--end of gen collapsible--*/
 
@@ -273,6 +275,28 @@ img {
   .char-image {
     width: 233px;
     height: 415px;
+  }
+  .residentials,
+  .normal-humans {
+    grid-area: place1;
+  }
+  .human-world-places,
+  .mostly-human {
+    grid-area: place2;
+  }
+  .alfheim-world-places,
+  .non-humans {
+    grid-area: place3;
+  }
+  .locations,
+  .character-list {
+    display: inline-grid;
+    grid-template-areas:
+      "header header header"
+      "place1 place1 place1"
+      "place2 place2 place2"
+      "place3 place3 place3";
+    grid-gap: 10px;
   }
 }
 
