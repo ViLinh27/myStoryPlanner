@@ -239,6 +239,11 @@ img {
   list-style-type: none;
 }
 /*--end of gen collapsible--*/
+#charlist-pic {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*media screens*/
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -297,6 +302,14 @@ img {
       "place2 place2 place2"
       "place3 place3 place3";
     grid-gap: 10px;
+  }
+  .gen-collapsible {
+    text-align: center;
+  }
+  #locations-tab,
+  #characters-tab {
+    width: 100%;
+    text-align: center;
   }
 }
 
