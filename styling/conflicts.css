@@ -1,6 +1,6 @@
 /*Conflicts*/
 .conflicts {
-  margin: 50px auto;
+  margin: 3.125em auto;
 }
 /* modal button*/
 #myBtn,
@@ -8,7 +8,7 @@
 #myBtn3,
 #myBtn4 {
   background-color: #0c6d55;
-  font-size: 20px;
+  font-size: 1.25em;
   color: white;
   transition: 0.3s;
 }
@@ -42,8 +42,8 @@
 .modal-content4 {
   background-color: #a7e0ff;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 1.25em;
+  border: 0.0625em solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
@@ -54,11 +54,11 @@
 .close4 {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 0.94em;
+  right: 2.19em;
   transition: 0.3s;
 }
 .close:hover,
@@ -94,7 +94,7 @@
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 48em) {
   .modal-content,
   .modal-content2,
   .modal-content3,

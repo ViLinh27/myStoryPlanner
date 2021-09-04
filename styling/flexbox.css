@@ -8,19 +8,18 @@
 
 .flex-child {
   flex: 1;
-  /*border: 2px solid yellow;*/
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .flex-child:first-child {
-  margin-right: 20px;
+  margin-right: 1.25em;
 }
 /*end of flex-box*/
 
 /*media queries*/
-@media (max-width: 700px) {
+@media (max-width: 48em) {
   .flex-container {
     flex-direction: column;
   }

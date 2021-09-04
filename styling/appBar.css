@@ -3,14 +3,14 @@
   width: 100%; /* Full-width */
   background-color: #0c6d55; /* Dark-green background */
   overflow: auto; /* Overflow due to float */
-  padding: 5px;
+  padding: 0.31em;
   /* position: fixed; */
 }
 
 .app-bar a {
   float: left; /*float links side by side*/
   text-align: center; /*center align text*/
-  padding: 12px 0; /* Some top and bottom padding */
+  padding: 0.75em 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: white; /* White text color */
 }
