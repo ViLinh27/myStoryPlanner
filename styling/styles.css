@@ -131,6 +131,21 @@ a:visited {
   /**/
 }
 /*-- end of header--*/
+/*character preview on home page*/
+.home-chargrid-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.home-chargrid-item {
+  background-color: #cef5eb;
+}
+.home-chargrid-image {
+  width: 7.5em;
+  height: 7.5em;
+  object-fit: cover;
+  float: center;
+}
+/*end of character preview on home page*/
 img {
   object-fit: cover;
 }
