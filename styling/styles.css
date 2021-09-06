@@ -9,13 +9,13 @@
 
 /*--global--*/
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
-body {
-  font-family: "Nanum Gothic", sans-serif;
-  background-color: #25a283;
-}
 
 * {
   box-sizing: border-box;
+}
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #25a283;
 }
 a {
   text-decoration: none;
@@ -55,20 +55,19 @@ a:visited {
 /* Right column (page content) */
 .right {
   /* flex: 80%; */
-  /* padding: 15px; */
   background-color: #82e1c9;
-  margin-left: 200px;
-  padding: 1px 16px;
+  margin-left: 12.5em;
+  padding: 0.0625em 1em;
   height: 100%;
 }
 
 /* Style the search box */
 #mySearch {
   width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #cef5eb;
-  border-radius: 6px;
+  font-size: 0.05555em;
+  padding: 0.611111em;
+  border: 0.0625em solid #cef5eb;
+  border-radius: 0.3333em;
   background-color: #cef5eb;
   margin: 0;
 }
@@ -325,6 +324,13 @@ img {
     float: center;
   }
   /*character pagess*/
+  .char-grid {
+    display: block;
+    padding: 2em 0;
+    /* grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 4em; */
+  }
 }
 
 /*end of media screens*/
