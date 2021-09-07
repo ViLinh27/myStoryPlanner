@@ -136,14 +136,25 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+/*text over images*/
 .home-chargrid-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-left-text {
+  position: absolute;
+  bottom: 0.75em;
+  left: 8.5em;
   background-color: #cef5eb;
+  font-size: small;
 }
 .home-chargrid-image {
   width: 7.5em;
   height: 7.5em;
   object-fit: cover;
   float: center;
+  border: 2px solid #cef5eb;
 }
 /*end of character preview on home page*/
 img {
@@ -278,6 +289,13 @@ img {
   #mySearch {
     float: right;
   }
+  .bottom-left-text {
+    position: absolute;
+    bottom: 0.75em;
+    left: 4.5em;
+    background-color: #cef5eb;
+    font-size: small;
+  }
   /*character*/
   .main-char-content {
     margin: 15px 30px;
@@ -337,6 +355,13 @@ img {
   #mySearch {
     text-align: center;
     float: center;
+  }
+  .bottom-left-text {
+    position: absolute;
+    bottom: 0.75em;
+    left: 2em;
+    background-color: #cef5eb;
+    font-size: small;
   }
   /*character pagess*/
   .char-grid {
