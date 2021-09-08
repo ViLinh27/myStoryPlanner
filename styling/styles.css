@@ -134,7 +134,7 @@ a:visited {
 /*character preview on home page*/
 .home-chargrid-preview {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /*text over images*/
 .home-chargrid-item {
